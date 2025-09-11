@@ -119,6 +119,8 @@ body {
 @media (max-width: 420px) {
   .stage {
     padding: 4vw 1vw;
+    max-width: 80%;
+    
   }
   .titulo {
     font-size: 1em;
@@ -139,3 +141,4 @@ body {
     padding: 8px 14px;
   }
 }
+
