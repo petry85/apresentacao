@@ -119,6 +119,31 @@ body {
 }
 
 
+@media (max-width: 420px) {
+  .stage {
+    max-width: 50%;
+  }
+ /* .titulo {
+    font-size: 1em;
+  }
+  .dentista {
+    width: 22vw;
+    max-width: 50px;
+    min-width: 28px;
+    top: 18px;
+  }
+  .image-container {
+    width: 74px;
+    height: 74px;
+    margin: 25px auto 9px auto;
+  }
+  .reveal-button {
+    font-size: 0.9em;
+    padding: 8px 14px;
+  }
+}*/
+
+
 
 
 
