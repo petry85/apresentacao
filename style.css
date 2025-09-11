@@ -29,7 +29,7 @@ body {
       width: 50%;
       height: 100%;
       /*background: linear-gradient(to right, #03640b, #03640b);*/
-      background-image: "imagem/marise.png";
+      background-image: "imagem/direita.png";
       z-index: 2;
       transition: transform 2s ease-in-out;
     }
@@ -117,6 +117,7 @@ body {
   transform: translateX(0);
   object-fit: contain;
 }
+
 
 
 
