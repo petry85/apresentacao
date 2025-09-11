@@ -123,9 +123,10 @@ body {
   .stage {
     max-width: 50%;
   }
- /* .titulo {
+ .titulo {
     font-size: 1em;
   }
+/*
   .dentista {
     width: 22vw;
     max-width: 50px;
@@ -142,6 +143,7 @@ body {
     padding: 8px 14px;
   }
 }*/
+
 
 
 
