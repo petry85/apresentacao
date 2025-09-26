@@ -29,25 +29,42 @@
   <button class="reveal-button" onclick="abrirCortina()">Revelar</button>
 
   <script>
-    function abrirCortina() {
-      document.querySelector('.dentista.esquerda').style.transform = 'translateX(-100%)';
-      document.querySelector('.dentista.direita').style.transform = 'translateX(100%)';
+  function abrirCortina() {
+    document.querySelector('.dentista.esquerda').style.transform = 'translateX(-100%)';
+    document.querySelector('.dentista.direita').style.transform = 'translateX(100%)';
 
-      // Faz a imagem aparecer suavemente
-      const imagem = document.querySelector('.image-container img');
-      imagem.style.opacity = '1';
+    const imagem = document.querySelector('.image-container img');
+    imagem.style.opacity = '1';
 
-      // Esconde o título suavemente
-      const titulo = document.getElementById('titulo');
-      titulo.style.opacity = '0';
-      setTimeout(() => {
-        titulo.style.display = 'none';
-      }, 1000);
-    }
+    const titulo = document.getElementById('titulo');
+    titulo.style.opacity = '0';
+    setTimeout(() => {
+      titulo.style.display = 'none';
+    }, 1000);
 
-</script>
+    // Substitui o botão "Revelar" por um botão de download com link do OneDrive
+    const botao = document.querySelector('.reveal-button');
+    const link = document.createElement('a');
+
+    link.href = 'https://excelenciacobrancaempres629.sharepoint.com/:x:/r/sites/cobrancaarquivos/_layouts/15/Doc.aspx?sourcedoc=%7BED8F273A-E375-4D3B-B17E-951A4368B63B%7D&file=relatorio_ligacoes_online.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1'; // substitua com seu link direto
+    link.download = 'Campanha-Neodent';
+    link.target = '_blank'; // abre em nova aba
+    link.rel = 'noopener noreferrer';
+
+    botao.textContent = 'Baixar Apresentação';
+    botao.onclick = null;
+    botao.classList.remove('reveal-button');
+    botao.classList.add('download-button');
+    botao.setAttribute('style', 'margin-top: 20px');
+
+    link.appendChild(botao);
+    botao.parentNode.replaceChild(link, botao);
+  }
+  </script>
+
 </body>
 </html>
+
 
 
 
